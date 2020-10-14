@@ -94,6 +94,7 @@ contains
     real(kind=dp) :: zfactor
     real(kind=dp) :: two_na
     character(len=1) :: answer
+    real(kind=dp) :: xions
 
     ! restart
     restart=0 ! no restart by default
@@ -252,8 +253,9 @@ contains
     real(kind=dp),intent(in) :: nnd
     real(kind=dp),intent(in) :: ttemp
     real(kind=dp),intent(out) :: xions
+    real(kind=dp) :: two_na
     
-    two_na=2.0 * nnd * clumping * bh00 * (temper(i)/1e4)**albpow
+    two_na=2.0 * nnd * clumping * bh00 * (temper(ii)/1e4)**albpow
     xions=1.0-(sqrt(gamma_uvb_h*(gamma_uvb_h + 2 * two_na))-gamma_uvb_h)/ &
          two_na
     

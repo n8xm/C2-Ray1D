@@ -139,7 +139,8 @@ contains
     !      the output.
     
     use sizes, only: mesh
-    use grid, only: x,dr
+    !use grid, only: x,dr
+    use grid, only: dr
     use material
     use photonstatistics
     use radiation, only: teff,rstar,lstar,S_star
@@ -180,7 +181,8 @@ contains
     !                     since t=0
 
     use sizes, only: mesh
-    use grid, only: x,dr
+    !use grid, only: x,dr
+    use grid, only: dr
     use material
     use photonstatistics
     use radiation, only: teff,rstar,lstar,S_star
@@ -228,7 +230,7 @@ contains
     !                  Error due to finite cell size.
     
     use sizes, only: mesh
-    use grid, only: x,dr
+    use grid, only: dr
     use material
     use photonstatistics
     use radiation, only: teff,rstar,lstar,S_star
