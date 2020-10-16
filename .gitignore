@@ -1,0 +1,6 @@
+C2Ray_1D
+*.o
+*.mod
+*.dat
+*.out
+*.log
