@@ -97,7 +97,7 @@ module radiation
   real(kind=dp),parameter :: dlogtau=(maxlogtau-minlogtau)/real(NumTau)
 
   !> Logical that determines the use of grey opacities
-  logical,parameter :: grey=.false. ! use grey opacities?
+  logical,parameter :: grey=.true. ! use grey opacities?
 
   ! stellar properties
   real(kind=dp) :: teff !< Black body effective temperature
